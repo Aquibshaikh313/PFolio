@@ -3,447 +3,1355 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-    <style>
-        ::placeholder {
-            background-color: white;
-            color: black;
-        }
-
-
-
-        .imges {
-            transition: ease-in-out;
-            transition-duration: 1s;
-            overflow: hidden;
-
-        }
-
-        .imges:hover {
-            transition: all;
-            transition-duration: 3s;
-            transform: scale(1.1);
-        }
-
-        .container-fluid {
-            background-color: black;
-            color: white;
-        }
-
-        header {
-
-            width: 100%;
-        }
-
-        .me {
-            font-size: 100px;
-            font-family: 'cursive';
-        }
-
-        .linke {
-            text-decoration: none;
-            color: grey;
-            font-size: 16px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .linke:hover {
-            color: red;
-            text-decoration: underline;
-        }
-
-        .A {
-
-            width: 100px;
-            height: 120px;
-            margin-bottom: 60px;
-        }
-
-        .proj {
-            font-family: 'Gill Sans', 'Gill Sans MT';
-            color: white;
-        }
-
-        .proj:hover {
-            color: red;
-            text-decoration: underline;
-        }
-
-        .name {
-            margin-right: 65px;
-        }
-
-        .title {
-            position: fixed;
-            font-family: 'Gill Sans', 'Gill Sans MT';
-            font-size: 25px;
-
-        }
-
-        .navbar-nav {
-            background-color: black;
-            margin-top: 50px;
-            font-size: 30px;
-            position: fixed;
-            height: 550px;
-            width: 150px;
-        }
-
-        .info {
-            margin-top: 150px;
-            margin-left: 400px;
-        }
-
-        .new {
-            font-size: 20px;
-            margin-bottom: 1px;
-        }
-
-        #contact {
-            text-decoration: none;
-        }
-
-        .Education,
-        .projects,
-        .skills,
-        .contactme,
-        .services {
-            margin-top: 120px;
-            margin-left: 180px;
-            font-family: 'Gill Sans', 'Gill Sans MT';
-
-        }
-
-        .nav-link {
-            text-decoration: none;
-        }
-
-        #services {
-            padding: 30px 0;
-        }
-
-        .services-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px;
-            margin-top: 50px;
-        }
-
-        .services-list div {
-            background: #262626;
-            padding: 40px;
-            font-size: 13px;
-            font-weight: 300;
-            border-radius: 10px;
-            transition: background 0.5s, transform 0.5s;
-        }
-
-        .services-list div:hover {
-            background: rgb(253, 54, 54);
-            transform: translateY(-10px);
-
-        }
-    </style>
-
-    <script>
-        function GetDetails(name) {
-            document.getElementById('display').innerHTML = name.fontcolor('aqua');
-
-        }
-        function OpenImage(name) {
-            switch (name) {
-                case "KFC":
-                    window.open("http://127.0.0.1:5500/Projects/Kfc.html", "KFC Order", "width=1200 height=768",);
-                    break;
-                case "Netflix Login":
-                    window.open("/public/Images/signin.png.png", "Netflix Login", "width=1200 height=768",);
-                    break;
-                case "BMI Calculator":
-                    window.open("/public/Images/Bmi.png.png", "BMI Calculator", "width=1200 height=768",);
-                    break;
-                case "GDS":
-                    window.open("/public/Images/gds.png.png", "GDS", "width=1200 height=768",);
-                    break;
-                case "Amazon":
-                    window.open("/public/Images/amazon.png.png", "Amazon", "width=1200 height=768",);
-                    break;
-                case "Responsive":
-                    window.open("/public/Images/Screenshot (201).png", "Responsive", "width=1200 height=768",);
-                    break;
-                case "Portal":
-                    window.open("/public/Images/portal.png.png", "Portal", "width=1200 height=768",);
-                    break;
-                case "Hotel Registration":
-                    window.open("/public/Images/hotelregistration.png", "Hotel Registration", "width=1200 height=768",);
-                    break;
-                case "Casscading Dropdown":
-                    window.open("/public/Images/Screenshot (129).png", "Casscading Dropdown", "width=1200 height=768",);
-                    break;
-            }
-        } 
-    </script>
-</head>
-
-<body class="container-fluid mt-3 ">
-    <header id="home" class="p-1">
-        <h2 class="title">PORTFOLIO</h2>
-        <div>
-
-            <ul class="navbar-nav border p-4">
-                <li class="new"><img src="./font2.png" style="width:105px; height: 105px;"></li><br>
-                <div class="up">
-                    <h2 class="ms-2"><span class="text-danger">A</span>quib</h2>
-
-                    </span>
-                    <li class="nav-item"><a class="linke" href="">Home</a></li>
-                    <li class="nav-item"><a class="linke" href="#Education">About me</a></li>
-                    <li class="nav-item"><a class="linke" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="linke" href="#project">Project</a></li>
-                    <li class="nav-item"><a class="linke" href="#contact">Contact me</a></li>
-                    <div class="social">
-                        <a class="linke" href="https://www.linkedin.com/in/aquib-shaikh-3857ab226/"><span
-                                class="bi bi-linkedin"></span></a>
-                        <a class="linke" href="https://instagram.com/aquibshaikh313?igshid=YmMyMTA2M2Y="><span
-                                class="bi bi-instagram"></span></a>
-                        <a class="linke" href="https://www.youtube.com/channel/UCeXFUy2XeF3_DGM_Jt7-KDA"><span
-                                class="bi bi-youtube"></span></a>
-                    </div>
-                </div>
-
-            </ul>
-        </div>
-        <div class="info">
-            <div>
-                <h1 class="me">
-                    Hi,<br><b> I'm <b class="text-danger name">AQUIB,</b></b> <br>Frontend
-                    Developer.
-
-                </h1><br>
-
-
-            </div>
-        </div>
-    </header>
-
-    <div class="all">
-        <!-- ABOUT ME -->
-
-        <div class="Education " id="Education">
-            <div class="row">
-                <div class="col-4">
-                    <img src="./bg.png.png" alt="" height="350px" height="350px">
-                </div>
-                <div class="col-6">
-                    <h2><b>ABOUT <span class="text-danger">ME</span></b></h2>
-                    <p class="text-secondary">I'm Frontend learner, I can Designed and Developed Interactive pages.</p>
-
-                    <div class="text-white p-2">
-
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item "><a href="#personal" data-bs-toggle="tab" class="nav-link">Skills</a>
-                            </li>
-                            <li class="nav-item"><a href="#sme" data-bs-toggle="tab" class="nav-link">Education</a></li>
-                            <li class="nav-item"><a href="#agri" data-bs-toggle="tab" class="nav-link">Certification</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane" id="personal">
-                            <ul>
-                                <h5 class="text-danger">Frontend</h5>
-                                <p>HTML5, CSS3, Bootstrap5,jQuery,Javascript</p>
-                                <h5 class="text-danger">Library</h5>
-                                <p>Reactjs</p>
-                                <h5 class="text-danger">Database</h5>
-                                <p>Mongodb</p>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="tab-pane" id="sme">
-
-                            <h5 class="text-danger">BE</h5>
-                            <p class="text-secondary">Dr.Vithalrao vikhe patil college of Engineering-2021</p>
-                            <h5 class="text-danger">HSC</h5>
-                            <p class="text-secondary">Residential jr.college 2017</p>
-                            <h5 class="text-danger">SSC</h5>
-                            <p class="text-secondary">Carmel Convent School 2015</p>
-
-                        </div>
-                        <div class="tab-pane" id="agri">
-                            <h4 class="text-danger">Ui FullStack </h4>
-                            <p class="text-secondary">Naresh iTechnologies</p>
-                            <h4 class="text-danger">Reactjs </h4>
-                            <p class="text-secondary">Naresh iTechnologies</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <!-- Skills -->
-        <div class="skills " id="skills">
-            <h2><b>MY <span class="text-danger">SKILLS</span></b></h2>
-            <p class="text-secondary mb-5">I'm well aware with the Frontend technologies.With the help of skills i can
-                Design and Develop an complete Responsive website</p>
-
-
-            <div class="progress mb-5">
-                <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width: 90%;">HTML
-                </div>
-            </div>
-            <div class="progress mb-5">
-                <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width: 75%;">CSS
-                </div>
-            </div>
-            <div class="progress mb-5">
-                <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width: 85%;">
-                    Bootstrap</div>
-            </div>
-            <div class="progress mb-5">
-                <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width: 65%;">
-                    Reactjs</div>
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <!-- Services -->
-    <div id="services" class="services">
-        <div class="container">
-            <h2><b>MY <span class="text-danger">SERVICES</span></b></h2>
-
-            <div class="services-list">
-                <div class="">
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eius nesciunt ratione
-                        nemo
-                        quos omnis assumenda magnam veritatis, ea nam totam, voluptatem facere tempora! Eligendi
-                        sequi maxime, reiciendis perspiciatis harum nostrum quibusdam optio unde doloremque.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div class="">
-                    <h2>UI/UX</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eius nesciunt ratione
-                        nemo
-                        quos omnis assumenda magnam veritatis, ea nam totam, voluptatem facere tempora! Eligendi
-                        sequi maxime, reiciendis perspiciatis harum nostrum quibusdam optio unde doloremque.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div class="">
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eius nesciunt ratione
-                        nemo
-                        quos omnis assumenda magnam veritatis, ea nam totam, voluptatem facere tempora! Eligendi
-                        sequi maxime, reiciendis perspiciatis harum nostrum quibusdam optio unde doloremque.</p>
-                    <a href="#">learn more</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <!-- Projects -->
-
-    <div class="projects mt-5" id="project">
-        <div class="d-flex">
-            <h2><b>MY <span class="text-danger"> Work</span></b></h2>
-        </div>
-        <table width="100%" frame="void">
-            <tbody>
-                <tr>
-                    <td><img src="./KFCorder.png" class="imges" name="Cards"
-                            ondblclick="OpenImage(this.name)" width="380px">
-                        <p><a href="http://127.0.0.1:5501/Projects/Kfc.html" class="proj">KFC Order Now</a></p>
-                    </td>
-                    <td><img src="./N.png" class="imges" name="Netflix Login"
-                            ondblclick="OpenImage(this.name)" width="380px">
-                        <p><a href="http://127.0.0.1:5501/Projects/Netflix.html"
-                                class="proj">Netflix login page</a></p>
-                    </td>
-
-                    <td><img src="./Screenshot (201).png" class="imges" name="Responsive"
-                            ondblclick="OpenImage(this.name)" width="380px">
-                        <p><a href="http://127.0.0.1:5501/AquibsResponsive.html" class="proj">Responsive
-                                Design</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="./hotel2.png" class="imges" name="Hotel Registration"
-                            ondblclick="OpenImage(this.name)" width="380px">
-                        <p><a href="http://127.0.0.1:5501/Projects/Hotel.html" class="proj">Hotel
-                                Regitration Form</a></p>
-                    </td>
-
-                    <td><img src="./Amazons.png.png" class="imges" name="Amazon"
-                            ondblclick="OpenImage(this.name)" width="380px">
-                        <p><a href="http://127.0.0.1:5501/Bootstrap%20Examples/Carousel.html" class="proj">Interactive
-                                Carousel and Cart Items</a></p>
-                    </td>
-
-                    <td><img src="./bmicalci.png" class="imges" name="BMI Calculator"
-                            ondblclick="OpenImage(this.name)" width="380px" height="220px">
-                        <p><a href="http://127.0.0.1:5501/Projects/Bmi.html" class="proj">BMI
-                                Calculator</a></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img src="./india.png.png" class="imges" name="Portal"
-                            ondblclick="OpenImage(this.name)" width="380">
-                        <p><a href="http://127.0.0.1:5501/Projects/portal.html" class="proj">Portal of India</a>
-                        </p>
-                    </td>
-                    <td><img src="./gds.png.png" class="imges" name="GDS" ondblclick="OpenImage(this.name)"
-                            width="380px">
-                        <p><a href="http://127.0.0.1:5501/Projects/GDS.html" class="proj">GDS Online Engagement</a></p>
-                    </td>
-
-                    <td><img src="./Screenshot (129).png" class="imges" name="Casscading Dropdown"
-                            ondblclick="OpenImage(this.name)" width="380">
-                        <p><a href="http://127.0.0.1:5501/Javascript%20Examples/Calculators/API%20Examples/FakestoreAPI.html"
-                                class="proj">Shopping Cart</a></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div><br>
-    <div class="contactme" id="contact">
-        <h2>CONTACT <span class="text-danger">ME</span></h2>
-        <p class="text-secondary">If you have any query you can directly contact me, for that you just have to
-            fill
-            the following details
-            below.</p>
-        <div class="d-flex mb-3">
-            <input type="text" class="form-control me-3 w-25" size="8" placeholder="Your Name">
-            <input type="email" size="8" class="form-control w-25" placeholder="Enter email address">
-        </div>
-        <textarea class="" rows="4" cols="71" placeholder="Enter text here"></textarea><br>
-        <button class="btn btn-outline-danger mb-5">
-            <a class="linke" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Send Message!</a>
-        </button>
-
-    </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
         crossorigin="anonymous"></script>
 
 
+    <style>
+        :root {
+            --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family-sans-serif);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #515151;
+            text-align: left;
+            background-color: #e9edf4;
+        }
+
+        a {
+            color: #3f84fc;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: #0458eb;
+            text-decoration: underline;
+        }
+
+        h1,
+        .h1 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0;
+        }
+
+        .card-body {
+            flex: 1;
+            padding: 1.25rem;
+        }
+
+        .card-header {
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            text-align: center;
+        }
+
+        .dashboard {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .dashboard-app {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            margin-top: 84px;
+        }
+
+        .dashboard-content {
+            flex: 2;
+            padding: 25px;
+        }
+
+        .dashboard-nav {
+            min-width: 238px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            overflow: auto;
+            background-color: #373193;
+        }
+
+        .dashboard-compact .dashboard-nav {
+            display: none;
+        }
+
+        .dashboard-nav header {
+            min-height: 84px;
+            padding: 8px 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dashboard-nav a {
+            color: #fff;
+        }
+
+        .brand-logo {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            color: #515151;
+            align-items: center;
+        }
+
+        .brand-logo:focus,
+        .brand-logo:active,
+        .brand-logo:hover {
+            color: #dbdbdb;
+            text-decoration: none;
+        }
+
+        .brand-logo i {
+            font-size: 27px;
+            margin-right: 10px;
+        }
+
+        .dashboard-nav-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dashboard-nav-item {
+            min-height: 56px;
+            padding: 8px 20px 8px 70px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            transition: ease-out 0.5s;
+        }
+
+        .dashboard-nav-item i {
+            width: 36px;
+            font-size: 19px;
+            margin-left: -40px;
+        }
+
+        .dashboard-nav-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+            text-decoration: none;
+            color: red;
+        }
+
+
+        .active {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-nav-dropdown {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dashboard-nav-dropdown.show {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .dashboard-nav-dropdown.show>.dashboard-nav-dropdown-toggle {
+            font-weight: bold;
+        }
+
+        .dashboard-nav-dropdown.show>.dashboard-nav-dropdown-toggle:after {
+            transform: none;
+        }
+
+        .dashboard-nav-dropdown-menu {
+            display: none;
+            flex-direction: column;
+        }
+
+        .dashboard-nav-dropdown-item {
+            min-height: 40px;
+            padding: 8px 20px 8px 70px;
+            display: flex;
+            align-items: center;
+            transition: ease-out 0.5s;
+        }
+
+        .dashboard-nav-dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .menu-toggle {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #443ea2;
+        }
+
+        .menu-toggle:hover,
+        .menu-toggle:active,
+        .menu-toggle:focus {
+            text-decoration: none;
+            color: #875de5;
+        }
+
+        .menu-toggle i {
+            font-size: 20px;
+        }
+
+        .dashboard-toolbar {
+            min-height: 84px;
+            background-color: #dfdfdf;
+            display: flex;
+            align-items: center;
+            padding: 8px 27px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-item-divider {
+            height: 1px;
+            margin: 1rem 0;
+            overflow: hidden;
+            background-color: rgba(236, 238, 239, 0.3);
+        }
+
+        @media (min-width: 992px) {
+            .dashboard-app {
+                margin-left: 238px;
+            }
+
+            .dashboard-compact .dashboard-app {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-content {
+                padding: 15px 0px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .dashboard-nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 1070;
+            }
+
+            .dashboard-nav.mobile-show {
+                display: block;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .dashboard-nav header .menu-toggle {
+                display: flex;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .dashboard-toolbar {
+                left: 238px;
+            }
+
+            .dashboard-compact .dashboard-toolbar {
+                left: 0;
+            }
+        }
+
+        /*------------------------------------ Navbar Css Ends Here-------------------------- */
+        /*------------------------------------Content Start Here-------------------- */
+        .text-animation {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: appearAndStay 1s ease-in-out forwards;
+        }
+
+        .me {
+            font-size: 106px;
+        }
+
+        /* Media query for smaller screens, adjust the font size as needed */
+        @media (max-width: 768px) {
+            .me {
+                font-size: 64px;
+                /* Adjust the font size for smaller screens */
+            }
+        }
+
+        @keyframes appearAndStay {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 1;
+                /* Set opacity to 1 to make it stay visible */
+                transform: translateY(0);
+            }
+        }
+
+        /* .all{
+            background-image: url('../public/Images/bg.png.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            opacity: 0.8; 
+        } */
+
+        #Education {
+            padding: 20px;
+        }
+
+        /*----------------------------------New Skill section Here-------------------------------------------------*/
+        body {
+            font-family: tahoma;
+            padding: 40px 0;
+        }
+
+        .main-timeline {
+            font-family: tahoma;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .main-timeline::before,
+        .main-timeline::after {
+            content: "";
+            height: 40px;
+            width: 40px;
+            background-color: #e7e7e7;
+            border-radius: 50%;
+            border: 10px solid #303334;
+            transform: translateX(-50%);
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            z-index: 2;
+        }
+
+        .main-timeline::after {
+            top: auto;
+            bottom: 15px;
+        }
+
+        .main-timeline .timeline {
+            padding: 35px 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-timeline .timeline::before,
+        .main-timeline .timeline::after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            border-radius: 110px 0 0 110px;
+            border: 15px solid #46b2bc;
+            border-right: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .main-timeline .timeline::after {
+            height: calc(100% - 30px);
+            width: calc(50% - 12px);
+            border-color: #65c7d0;
+            left: 12px;
+            top: 15px;
+        }
+
+        .main-timeline .timeline-content {
+            display: inline-block;
+        }
+
+        .main-timeline .timeline-content:hover {
+            text-decoration: none;
+        }
+
+        .main-timeline .timeline-year {
+            color: #65c7d0;
+            font-size: 50px;
+            font-weight: 600;
+            display: inline-block;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+
+        .main-timeline .timeline-icon {
+            color: #65c7d0;
+            font-size: 70px;
+            display: inline-block;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 34%;
+            top: 50%;
+        }
+
+        .main-timeline .content {
+            color: #909090;
+            width: 50%;
+            padding: 20px;
+            display: inline-block;
+            float: right;
+        }
+
+        .main-timeline .title {
+            color: #65c7d0;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+        }
+
+        .main-timeline .description {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .main-timeline .timeline:nth-child(even)::before {
+            left: auto;
+            right: 0;
+            border-radius: 0 110px 110px 0;
+            border: 15px solid red;
+            border-left: none;
+        }
+
+        .main-timeline .timeline:nth-child(even)::after {
+            left: auto;
+            right: 12px;
+            border-radius: 0 100px 100px 0;
+            border: 15px solid green;
+            border-left: none;
+        }
+
+        .main-timeline .timeline:nth-child(even) .content {
+            float: left;
+        }
+
+        .main-timeline .timeline:nth-child(even) .timeline-year {
+            left: auto;
+            right: 10%;
+        }
+
+        .main-timeline .timeline:nth-child(even) .timeline-icon {
+            left: auto;
+            right: 32%;
+        }
+
+        .main-timeline .timeline:nth-child(5n+1)::before {
+            border-color: #46b2bc;
+        }
+
+        .main-timeline .timeline:nth-child(5n+1)::after {
+            border-color: #65c7d0;
+        }
+
+        .main-timeline .timeline:nth-child(5n+1) .timeline-icon {
+            color: #65c7d0;
+        }
+
+        .main-timeline .timeline:nth-child(5n+1) .timeline-year {
+            color: #65c7d0;
+        }
+
+        .main-timeline .timeline:nth-child(5n+1) .title {
+            color: #65c7d0;
+        }
+
+        .main-timeline .timeline:nth-child(5n+2)::before {
+            border-color: #ea3c14;
+        }
+
+        .main-timeline .timeline:nth-child(5n+2)::after {
+            border-color: #EF5720;
+        }
+
+        .main-timeline .timeline:nth-child(5n+2) .timeline-icon {
+            color: #EA3C14;
+        }
+
+        .main-timeline .timeline:nth-child(5n+2) .timeline-year {
+            color: #EA3C14;
+        }
+
+        .main-timeline .timeline:nth-child(5n+2) .title {
+            color: #EA3C14;
+        }
+
+        .main-timeline .timeline:nth-child(5n+3)::before {
+            border-color: #8CC63E;
+        }
+
+        .main-timeline .timeline:nth-child(5n+3)::after {
+            border-color: #6CAF29;
+        }
+
+        .main-timeline .timeline:nth-child(5n+3) .timeline-icon {
+            color: #8CC63E;
+        }
+
+        .main-timeline .timeline:nth-child(5n+3) .timeline-year {
+            color: #8CC63E;
+        }
+
+        .main-timeline .timeline:nth-child(5n+3) .title {
+            color: #8CC63E;
+        }
+
+        .main-timeline .timeline:nth-child(5n+4)::before {
+            border-color: #F99324;
+        }
+
+        .main-timeline .timeline:nth-child(5n+4)::after {
+            border-color: #FBB03B;
+        }
+
+        .main-timeline .timeline:nth-child(5n+4) .timeline-icon {
+            color: #F99324;
+        }
+
+        .main-timeline .timeline:nth-child(5n+4) .timeline-year {
+            color: #F99324;
+        }
+
+        .main-timeline .timeline:nth-child(5n+4) .title {
+            color: #F99324;
+        }
+
+        .main-timeline .timeline:nth-child(5n+5)::before {
+            border-color: #0071BD;
+        }
+
+        .main-timeline .timeline:nth-child(5n+5)::after {
+            border-color: #0050A3;
+        }
+
+        .main-timeline .timeline:nth-child(5n+5) .timeline-icon {
+            color: #0071BD;
+        }
+
+        .main-timeline .timeline:nth-child(5n+5) .timeline-year {
+            color: #0071BD;
+        }
+
+        .main-timeline .timeline:nth-child(5n+5) .title {
+            color: #0071BD;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .main-timeline .timeline:after {
+                border-radius: 88px 0 0 88px;
+            }
+
+            .main-timeline .timeline:nth-child(even):after {
+                border-radius: 0 88px 88px 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .main-timeline .timeline {
+                margin-top: -19px;
+            }
+
+            .main-timeline .timeline:before {
+                border-radius: 50px 0 0 50px;
+                border-width: 10px;
+            }
+
+            .main-timeline .timeline:after {
+                height: calc(100% - 18px);
+                width: calc(50% - 9px);
+                border-radius: 43px 0 0 43px;
+                border-width: 10px;
+                top: 9px;
+                left: 9px;
+            }
+
+            .main-timeline .timeline:nth-child(even):before {
+                border-radius: 0 50px 50px 0;
+                border-width: 10px;
+            }
+
+            .main-timeline .timeline:nth-child(even):after {
+                height: calc(100% - 18px);
+                width: calc(50% - 9px);
+                border-radius: 0 43px 43px 0;
+                border-width: 10px;
+                top: 9px;
+                right: 9px;
+            }
+
+            .main-timeline .timeline-icon {
+                font-size: 60px;
+            }
+
+            .main-timeline .timeline-year {
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            .main-timeline .timeline-icon {
+                font-size: 50px;
+                transform: translateY(0);
+                top: 25%;
+                left: 10%;
+            }
+
+            .main-timeline .timeline-year {
+                font-size: 25px;
+                transform: translateY(0);
+                top: 65%;
+                left: 9%;
+            }
+
+            .main-timeline .content {
+                width: 68%;
+                padding: 10px;
+            }
+
+            .main-timeline .title {
+                font-size: 18px;
+            }
+
+            .main-timeline .timeline:nth-child(even) .timeline-icon {
+                right: 10%;
+            }
+
+            .main-timeline .timeline:nth-child(even) .timeline-year {
+                right: 9%;
+            }
+        }
+
+        /*---------------------------Project Imag gallery Here-----------------------------------------------------*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .project-table td {
+            padding: 20px;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .project-table img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .project-table img:hover {
+            transform: scale(1.05);
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .project-description {
+            font-size: 14px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .project-table td {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .project-table img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* .project-title,
+            .project-description {
+                text-align: center;
+            } */
+
+            .projects {
+                padding: 10px;
+            }
+
+
+        }
+
+
+        /*----------------------Contact Section Starts-------------*/
+       
+
+        .right_conatct_social_icon {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+        }
+
+        .contact_us {
+            background-color: #f1f1f1;
+            padding: 120px 0px;
+        }
+
+        .contact_inner {
+            background-color: #fff;
+            position: relative;
+            box-shadow: 20px 22px 44px #cccc;
+            border-radius: 25px;
+        }
+
+        .contact_field {
+            padding: 60px 340px 90px 100px;
+        }
+
+        .right_conatct_social_icon {
+            height: 100%;
+        }
+
+        .contact_field h3 {
+            color: #000;
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 10px
+        }
+
+        .contact_field p {
+            color: #000;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+        }
+
+        .contact_field .form-control {
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .contact_field .form-control:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom: 2px solid #1325e8;
+        }
+
+        .contact_field .form-control::placeholder {
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .contact_info_sec {
+            position: absolute;
+            background-color: #2d2d2d;
+            color: white;
+            right: 1px;
+            top: 18%;
+            height: 340px;
+            width: 340px;
+            padding: 40px;
+            border-radius: 25px 0 0 25px;
+        }
+
+        .contact_info_sec h4 {
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+
+        .info_single {
+            margin: 30px 0px;
+        }
+
+        .info_single i {
+            margin-right: 15px;
+        }
+
+        .info_single span {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        button.contact_form_submit {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+            border: none;
+            color: #fff;
+            padding: 10px 15px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 35px;
+            cursor: pointer;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .socil_item_inner li {
+            list-style: none;
+        }
+
+        .socil_item_inner li a {
+            color: #fff;
+            margin: 0px 15px;
+            font-size: 14px;
+        }
+
+        .socil_item_inner {
+            padding-bottom: 10px;
+        }
+
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /* Navbar Script Starts */
+        const mobileScreen = window.matchMedia("(max-width: 990px )");
+        $(document).ready(function () {
+            $(".dashboard-nav-dropdown-toggle").click(function () {
+                $(this).closest(".dashboard-nav-dropdown")
+                    .toggleClass("show")
+                    .find(".dashboard-nav-dropdown")
+                    .removeClass("show");
+                $(this).parent()
+                    .siblings()
+                    .removeClass("show");
+            });
+            $(".menu-toggle").click(function () {
+                if (mobileScreen.matches) {
+                    $(".dashboard-nav").toggleClass("mobile-show");
+                } else {
+                    $(".dashboard").toggleClass("dashboard-compact");
+                }
+            });
+        });
+        /* Navbar Script Ends */
+
+        $(document).ready(function () {
+            animateText();
+        });
+
+        function animateText() {
+            var delay = 0;
+            $('.text-animation').each(function () {
+                var element = $(this);
+                setTimeout(function () {
+                    element.addClass('animated');
+                }, delay);
+                delay += 100; // Adjust the delay time as needed
+            });
+        }
+
+        // Project Script here
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"><i
+                        class="fas fa-anchor"></i></a></header>
+            <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><span class="bi bi-house"> Home
+                    </span>
+                </a>
+                <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><span class="bi bi-person"> About
+                        </span>
+                    </a>
+                    <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><span class="bi bi-easel">
+                                Skills </span>
+                        </a>
+                        <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"> <span
+                                    class="bi bi-card-image"> Project</span>
+                            </a>
+                            <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"> <span
+                                        class="bi bi-telephone"> Contact</span>
+                                </a>
+                            </nav>
+                            <div class="social" style="text-align: center;">
+                                <a class="linke" href="https://www.linkedin.com/in/aquib-shaikh-3857ab226/"><span
+                                        class="bi bi-linkedin"></span></a>
+                                <a class="linke" href="https://instagram.com/aquibshaikh313?igshid=YmMyMTA2M2Y="><span
+                                        class="bi bi-instagram"></span></a>
+                                <a class="linke" href="https://www.youtube.com/channel/UCeXFUy2XeF3_DGM_Jt7-KDA"><span
+                                        class="bi bi-youtube"></span></a>
+                            </div>
+
+        </div>
+
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                <div class='container'>
+                    <div class="info">
+                        <div>
+                            <h1 class="me">
+                                <span class="text-animation">H</span>
+                                <span class="text-animation">i</span>
+                                <br>
+                                <div class="text-animation"> I'm <b class="text-danger name">AQUIB,</b>
+                                    <br>Frontend Developer.
+                                </div>
+                            </h1>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------ABOUT ME STARTED--------------------------------------------------------->
+            <div class="all">
+                <div class="container" id="Education">
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h2><b>ABOUT <span class="text-danger">ME</span></b></h2>
+                            <p class="text-secondary">I'm a frontend learner. I can design and develop interactive web
+                                pages.</p>
+
+                            <div class="text-white p-2">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item"><a href="#personal" data-bs-toggle="tab"
+                                            class="nav-link active">Skills</a></li>
+                                    <li class="nav-item"><a href="#sme" data-bs-toggle="tab"
+                                            class="nav-link">Education</a></li>
+                                    <li class="nav-item"><a href="#agri" data-bs-toggle="tab"
+                                            class="nav-link">Certification</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active p-2" id="personal">
+                                    <ul>
+                                        <li>
+                                            <h5 class="text-danger">Frontend</h5>
+                                        </li>
+                                        <li>
+                                            <p>HTML5, CSS3, Bootstrap5, jQuery, JavaScript</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="text-danger">Library</h5>
+                                        </li>
+                                        <li>
+                                            <p>React.js</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="text-danger">Database</h5>
+                                        </li>
+                                        <li>
+                                            <p>MongoDB</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane p-2" id="sme">
+                                    <ul>
+                                        <li>
+                                            <h5 class="text-danger">BE</h5>
+                                        </li>
+                                        <li>
+                                            <p class="text-secondary">Dr. Vithalrao Vikhe Patil College of Engineering -
+                                                2021</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="text-danger">HSC</h5>
+                                        </li>
+                                        <li>
+                                            <p class="text-secondary">Residential Jr. College - 2017</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="text-danger">SSC</h5>
+                                        </li>
+                                        <li>
+                                            <p class="text-secondary">Carmel Convent School - 2015</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane p-2" id="agri">
+                                    <ul>
+                                        <li>
+                                            <h5 class="text-danger">UI FullStack</h5>
+                                        </li>
+                                        <li>
+                                            <p class="text-secondary">Naresh iTechnologies</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="text-danger">React.js</h5>
+                                        </li>
+                                        <li>
+                                            <p class="text-secondary">Naresh iTechnologies</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------ABOUT ME Ended--------------------------------------------------------->
+
+            <!-----------------------------------SKILLS SECTION STARTED------------------------>
+
+
+
+
+
+            <div class="container">
+                <h2><b>MY <span class="text-danger ">SKILLS</span></b></h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="main-timeline">
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">HTML5</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Web Development</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year"> Language:</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">JavaScript</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">Database:</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Mongo DB</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">Library</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">React.js</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">Server</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Nodejs</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">API</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">API</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="timeline-year">Redux</span>
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-edit" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Redux</h3>
+                                        <p class="description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-----------------------------------SKILLS SECTION ENDS------------------------>
+            <!-- -----------------------Project Gallery Starts Herer----------------------->
+            <div class="container">
+                <h2>MY <span class="text-danger"> Work</span></h2>
+                <div class="projects mt-2" id="project">
+
+                    <table class="project-table">
+                        <tbody>
+                            <tr>
+                                <td><img src="./KFCorder.png" class="imges" name="Cards"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Projects/Kfc.html" class="proj">KFC Order Now</a>
+                                    </p>
+                                </td>
+                                <td><img src="./N.png" class="imges" name="Netflix Login"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Projects/Netflix.html" class="proj">Netflix login
+                                            page</a></p>
+                                </td>
+
+                                <td><img src="./Screenshot (201).png" class="imges" name="Responsive"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/AquibsResponsive.html" class="proj">Responsive
+                                            Design</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="./hotel2.png" class="imges" name="Hotel Registration"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Projects/Hotel.html" class="proj">Hotel
+                                            Registration Form</a></p>
+                                </td>
+
+                                <td><img src="./Amazons.png.png" class="imges" name="Amazon"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Bootstrap%20Examples/Carousel.html"
+                                            class="proj">Interactive
+                                            Carousel and Cart Items</a></p>
+                                </td>
+
+                                <td><img src="./bmicalci.png" class="imges" name="BMI Calculator"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px" height="auto">
+                                    <p><a href="http://127.0.0.1:5501/Projects/Bmi.html" class="proj">BMI
+                                            Calculator</a></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="./india.png.png" class="imges" name="Portal"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Projects/portal.html" class="proj">Portal of
+                                            India</a>
+                                    </p>
+                                </td>
+                                <td><img src="./gds.png.png" class="imges" name="GDS" ondblclick="OpenImage(this.name)"
+                                        width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Projects/GDS.html" class="proj">GDS Online
+                                            Engagement</a></p>
+                                </td>
+
+                                <td><img src="./Screenshot (129).png" class="imges" name="Cascading Dropdown"
+                                        ondblclick="OpenImage(this.name)" width="100%" max-width="380px">
+                                    <p><a href="http://127.0.0.1:5501/Javascript%20Examples/Calculators/API%20Examples/FakestoreAPI.html"
+                                            class="proj">Shopping Cart</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+            <!----------------------Contact Section Start------------------>
+            
+            <section class="contact_us">
+                <!-- <h2>CONTACT <span class="text-danger">ME</span></h2> -->
+                <div class="container">
+                    <h2>CONTACT <span class="text-danger">ME</span></h2>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="contact_inner">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="contact_form_inner">
+                                            <div class="contact_field">
+                                                <h3>Contatc Us</h3>
+                                                <p>Feel Free to contact us any time. We will get back to you as soon as
+                                                    we can!.</p>
+                                                <input type="text" class="form-control form-group" placeholder="Name" />
+                                                <input type="text" class="form-control form-group"
+                                                    placeholder="Email" />
+                                                <textarea class="form-control form-group"
+                                                    placeholder="Message"></textarea>
+                                                <button class="contact_form_submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="right_conatct_social_icon d-flex align-items-end">
+                                            <div class="socil_item_inner d-flex">
+                                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact_info_sec">
+                                    <h4>Contact Info</h4>
+                                    <div class="d-flex info_single align-items-center">
+                                        <i class="fas fa-headset"></i>
+                                        <span> +91 9075591998</span>
+                                    </div>
+                                    <div class="d-flex info_single align-items-center">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                        <span> aquib.shaikh256@gmail.com</span>
+                                    </div>
+                                    <div class="d-flex info_single align-items-center">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        <span> Ahmednagar,Maharashtra India.</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
 </body>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
 </html>
